@@ -1,0 +1,11 @@
+{
+  "firstname": "First Name",
+  "lastname": "Last Name",
+  "username": "Username",
+  "title": "Edit Your Profile",
+  "warn": "🔒You are viewing another staff's profile. According to the system, you are not permitted to modify another staff's profile data.",
+  "validate-message": "You do not have permission to modify other staff members data!",
+  "update-smessage": "Profile data successfully updated!",
+  "update-emessage": "Failed to update data.",
+  "save-changes": "Save Changes"
+}

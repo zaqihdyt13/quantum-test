@@ -1,0 +1,17 @@
+{
+  "title": "Beranda",
+  "example": "Module Contoh",
+  "logout": "Keluar",
+  "staffs-link": "Lihat Daftar Petugas",
+  "is-checkout": "Absensi hari ini telah selesai.",
+  "working-hours": "Total Jam Kerja Hari Ini",
+  "current-time": "Waktu Saat Ini",
+  "pending": "Belum Absen Masuk",
+  "working": "Sedang Bekerja (Absen Masuk)",
+  "finished": "Selesai (Absen Keluar)",
+  "clockin-smessage": "Berhasil Clock In!",
+  "clockin-emessage": "Gagal clock In",
+  "clockout-smessage": "Berhasil melakukan Clock Out! Absensi hari ini telah selesai.",
+  "clockout-emessage": "Gagal Clock Out",
+  "validate-message": "Catatan kehadiran tidak ditemukan."
+}

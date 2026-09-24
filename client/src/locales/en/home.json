@@ -1,0 +1,17 @@
+{
+  "title": "Home",
+  "example": "Example Module",
+  "logout": "Logout",
+  "staffs-link": "View Staff List",
+  "is-checkout": "Today's attendance recording is complete.",
+  "working-hours": "Total Working Hours Today",
+  "current-time": "Current Time",
+  "pending": "Not Yet Clock In",
+  "working": "Working (Clocked In)",
+  "finished": "Finished (Clocked Out)",
+  "clockin-smessage": "Clock In Successful!",
+  "clockin-emessage": "Failed to clock in",
+  "clockout-smessage": "Successfully clocked out! Todays attendance is complete.",
+  "clockout-emessage": "Failed to clock out",
+  "validate-message": "Record attendance not found."
+}

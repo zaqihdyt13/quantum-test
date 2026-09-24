@@ -1,0 +1,11 @@
+{
+  "firstname": "Nama Depan",
+  "lastname": "Nama Belakang",
+  "username": "Username",
+  "title": "Edit Profil Anda",
+  "warn": "🔒Anda sedang melihat profil petugas lain. Menurut sistem, Anda tidak diizinkan untuk mengubah data profil pertugas staf lain.",
+  "validate-message": "Anda tidak memiliki izin untuk mengubah data anggota staf lain!",
+  "update-smessage": "Data profil berhasil diperbarui!",
+  "update-emessage": "Gagal memperbarui data.",
+  "save-changes": "Simpan Perubahan"
+}

@@ -1,0 +1,9 @@
+{
+  "titles": {
+    "home": "Home",
+    "example": "Example Module"
+  },
+  "backTo": "Back to {{page}}",
+  "staffs-link": "Staffs",
+  "processing": "Processing..."
+}

@@ -1,0 +1,681 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/v1/staffs": {
+      "post": {
+        "operationId": "StaffController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateStaffRequestDataDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "staffs"
+        ]
+      },
+      "get": {
+        "operationId": "StaffController_findAll",
+        "parameters": [
+          {
+            "name": "order",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": "ASC",
+              "enum": [
+                "ASC",
+                "DESC"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 1,
+              "default": 5,
+              "type": "number"
+            }
+          },
+          {
+            "name": "q",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "staffs"
+        ]
+      }
+    },
+    "/api/v1/staffs/{id}": {
+      "get": {
+        "operationId": "StaffController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "staffs"
+        ]
+      },
+      "put": {
+        "operationId": "StaffController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStaffRequestDataDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "staffs"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/auth/register": {
+      "post": {
+        "operationId": "AuthController_register",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Register Success, please login to continue."
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "operationId": "AuthController_login",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User info with access token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthLogin"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/api/v1/auth/selfUser": {
+      "get": {
+        "operationId": "AuthController_selfUser",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/api/v1/auth/logout": {
+      "post": {
+        "operationId": "AuthController_logout",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/api/v1/attendances": {
+      "post": {
+        "operationId": "AttendanceController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAttendanceRequestDataDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "attendances"
+        ]
+      },
+      "get": {
+        "operationId": "AttendanceController_findAll",
+        "parameters": [
+          {
+            "name": "order",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": "ASC",
+              "enum": [
+                "ASC",
+                "DESC"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "pageSize",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 1,
+              "default": 5,
+              "type": "number"
+            }
+          },
+          {
+            "name": "q",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "attendances"
+        ]
+      }
+    },
+    "/api/v1/attendances/{id}": {
+      "get": {
+        "operationId": "AttendanceController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "attendances"
+        ]
+      },
+      "put": {
+        "operationId": "AttendanceController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAttendanceRequestDataDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "attendances"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "API",
+    "description": "API documentation",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "securitySchemes": {
+      "JWT-auth": {
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "type": "http",
+        "name": "JWT",
+        "description": "Enter JWT token",
+        "in": "header"
+      }
+    },
+    "schemas": {
+      "CreateStaffDto": {
+        "type": "object",
+        "properties": {
+          "staffId": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "staffId",
+          "firstName",
+          "username",
+          "lastName",
+          "email",
+          "password"
+        ]
+      },
+      "CreateStaffRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "staff"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/CreateStaffDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      },
+      "UpdateStaffDto": {
+        "type": "object",
+        "properties": {
+          "staffId": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "UpdateStaffRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "staff"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/UpdateStaffDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      },
+      "UserRegisterDto": {
+        "type": "object",
+        "properties": {
+          "staffId": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "staffId",
+          "firstName",
+          "lastName",
+          "email",
+          "username",
+          "password"
+        ]
+      },
+      "RegisterRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "auth"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/UserRegisterDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      },
+      "RegisterRequestDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/RegisterRequestDataDto"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      },
+      "UserLoginDto": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "password"
+        ]
+      },
+      "LoginRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "auth"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/UserLoginDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      },
+      "LoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/LoginRequestDataDto"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      },
+      "SelfUser": {
+        "type": "object",
+        "properties": {}
+      },
+      "AuthLogin": {
+        "type": "object",
+        "properties": {
+          "ownerUser": {
+            "$ref": "#/components/schemas/SelfUser"
+          },
+          "expiredIn": {
+            "type": "number"
+          },
+          "accessToken": {
+            "type": "string"
+          },
+          "lastLoggedInAt": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ownerUser",
+          "expiredIn",
+          "accessToken",
+          "lastLoggedInAt"
+        ]
+      },
+      "CreateAttendanceDto": {
+        "type": "object",
+        "properties": {
+          "attendanceId": {
+            "type": "string"
+          },
+          "staffId": {
+            "type": "string"
+          },
+          "checkInTime": {
+            "type": "string",
+            "example": "2026-09-22T08:00:00.000Z"
+          },
+          "checkOutTime": {
+            "type": "string",
+            "example": "2026-09-22T17:00:00.000Z"
+          },
+          "status": {
+            "type": "string",
+            "example": "Present"
+          }
+        },
+        "required": [
+          "attendanceId",
+          "staffId",
+          "checkInTime"
+        ]
+      },
+      "CreateAttendanceRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "attendance"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/CreateAttendanceDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      },
+      "UpdateAttendanceDto": {
+        "type": "object",
+        "properties": {
+          "attendanceId": {
+            "type": "string"
+          },
+          "staffId": {
+            "type": "string"
+          },
+          "checkInTime": {
+            "type": "string",
+            "example": "2026-09-22T08:00:00.000Z"
+          },
+          "checkOutTime": {
+            "type": "string",
+            "example": "2026-09-22T17:00:00.000Z"
+          },
+          "status": {
+            "type": "string",
+            "example": "Present"
+          }
+        }
+      },
+      "UpdateAttendanceRequestDataDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "attendance"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/UpdateAttendanceDto"
+          }
+        },
+        "required": [
+          "type",
+          "attributes"
+        ]
+      }
+    }
+  },
+  "security": [
+    {
+      "JWT-auth": []
+    }
+  ]
+}
