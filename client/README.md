@@ -66,6 +66,9 @@ Bagian ini merangkum pengembangan dan pembaruan antarmuka (frontend) yang telah 
   * Menerapkan pembatasan akses agar staff tidak dapat mengubah data milik staff lain.
 * [✅] Fitur Presensi (Clock In & Clock Out): 
   * Menyediakan antarmuka (UI) interaktif bagi staff untuk melakukan pencatatan kehadiran (*Clock In* dan *Clock Out*) yang terhubung langsung ke REST API backend.
+* [✅] Menerapkan translation
+* [✅] Menerapkan Logout
+* [✅] Membuat tampilan responsive
 
 ### Panduan Menjalankan Aplikasi Frontend
 
