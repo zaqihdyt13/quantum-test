@@ -54,31 +54,28 @@ pnpm install
 - [✅] Staff should be able to clock out
 
 
-## Implementation & Features (My Frontend Solution)
+## Implementation & Features (My Solution)
 
-Bagian ini merangkum pengembangan dan pembaruan antarmuka (frontend) yang telah diselesaikan untuk tugas Quantum Full-Stack.
+### Implemented
+* [✅] Ensuring staff can log in and log out of the system securely.
+* [✅] Staff Management: 
+  * Displaying lists or details of other staff members as required by the interface.
+  * Allowing staff members to update their own profile data.
+  * Implementing access restrictions so that staff cannot modify data belonging to other staff members.
+* [✅] Attendance Feature (Clock In & Clock Out):
+  * Providing an interactive user interface (UI) for staff to record their attendance (Clock In and Clock Out) connected directly to the backend REST API.
+* [✅] Implementing translation.
+* [✅] Creating a fully responsive design layout.
 
-### Ringkasan Fitur yang Diimplementasikan
-* [✅] Memastikan staff dapat masuk dan keluar dari sistem dengan aman.
-* [✅] Manajemen Staff: 
-  * Menampilkan daftar atau detail staff lain sesuai kebutuhan antarmuka.
-  * Memungkinkan staff untuk memperbarui data profil mereka sendiri.
-  * Menerapkan pembatasan akses agar staff tidak dapat mengubah data milik staff lain.
-* [✅] Fitur Presensi (Clock In & Clock Out): 
-  * Menyediakan antarmuka (UI) interaktif bagi staff untuk melakukan pencatatan kehadiran (*Clock In* dan *Clock Out*) yang terhubung langsung ke REST API backend.
-* [✅] Menerapkan translation
-* [✅] Menerapkan Logout
-* [✅] Membuat tampilan responsive
+### Getting Started & Installation
 
-### Panduan Menjalankan Aplikasi Frontend
-
-1. **Instalasi Dependensi**
+1. **Install Dependencies**
    ```bash
    pnpm install
 
 2. **Environment Configuration**
    Buat file .env dan copy isinya dari .env.examples
 
-3. **Menjalankan Mode Pengembangan**
+3. **Run Project**
    ```bash
    pnpm dev
