@@ -55,16 +55,25 @@ to add. We are looking forward to hearing from you!
 This section outlines the additions and enhancements implemented to complete the Quantum Backend homework.
 
 ### Implemented
-* **[✅] Database: MYSQL
-* **[✅] Authorization Guard**: Ensured staff cannot update or access another staff's confidential data.
-* **[✅] Attendance Tracking (Clock In & Clock Out)**: 
+* [✅] Database: MYSQL
+* [✅] Authorization Guard: Ensured staff cannot update or access another staff's confidential data.
+* [✅] Attendance Tracking (Clock In & Clock Out): 
   * Implemented a new `Attendance` model/entity using TypeORM.
   * Established a proper relational mapping between `Staffs` and `Attendance` entities.
   * Added REST API endpoints for tracking staff attendance (*Clock In* and *Clock Out* actions).
-* **[✅] unit test and e2e test
+* [✅] unit test and e2e test
 
 ### Getting Started & Installation
 
 1. **Install Dependencies**
    ```bash
    pnpm install
+
+2. **Menjalankan Mode Pengembangan**
+   ```bash
+   pnpm start:dev
+
+3. **Menjalankan test**
+   ```bash
+   pnpm test
+   pnpm test:e2e
