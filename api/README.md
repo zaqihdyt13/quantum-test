@@ -52,8 +52,6 @@ to add. We are looking forward to hearing from you!
 
 ## Implementation & Features (My Solution)
 
-This section outlines the additions and enhancements implemented to complete the Quantum Backend homework.
-
 ### Implemented
 * [✅] Database: MYSQL
 * [✅] Authorization Guard: Ensured staff cannot update or access another staff's confidential data.
@@ -63,17 +61,20 @@ This section outlines the additions and enhancements implemented to complete the
   * Added REST API endpoints for tracking staff attendance (*Clock In* and *Clock Out* actions).
 * [✅] unit test and e2e test
 
+### Tools
+* Postman: For API testing before consumption by the client side
+
 ### Getting Started & Installation
 
 1. **Install Dependencies**
    ```bash
    pnpm install
 
-2. **Menjalankan Mode Pengembangan**
+2. **Run Project**
    ```bash
    pnpm start:dev
 
-3. **Menjalankan test**
+3. **Run test**
    ```bash
    pnpm test
    pnpm test:e2e
