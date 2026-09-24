@@ -54,14 +54,14 @@ to add. We are looking forward to hearing from you!
 
 This section outlines the additions and enhancements implemented to complete the Quantum Backend homework.
 
-### Features Implemented
-* **[✅] Authorization Guard**: Ensured staff cannot update or access another staff's confidential data[cite: 4].
+### Implemented
+* **[✅] Database: MYSQL
+* **[✅] Authorization Guard**: Ensured staff cannot update or access another staff's confidential data.
 * **[✅] Attendance Tracking (Clock In & Clock Out)**: 
   * Implemented a new `Attendance` model/entity using TypeORM.
-  * Established a proper relational mapping between `Staffs` and `Attendance` entities[cite: 4].
-  * Added REST API endpoints for tracking staff attendance (*Clock In* and *Clock Out* actions)[cite: 4].
-
----
+  * Established a proper relational mapping between `Staffs` and `Attendance` entities.
+  * Added REST API endpoints for tracking staff attendance (*Clock In* and *Clock Out* actions).
+* **[✅] unit test and e2e test
 
 ### Getting Started & Installation
 
