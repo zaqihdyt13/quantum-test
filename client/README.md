@@ -52,3 +52,30 @@ pnpm install
 - [✅] Staff should not be able to update another staff data
 - [✅] Staff should be able to clock in
 - [✅] Staff should be able to clock out
+
+
+## Implementation & Features (My Frontend Solution)
+
+Bagian ini merangkum pengembangan dan pembaruan antarmuka (frontend) yang telah diselesaikan untuk tugas Quantum Full-Stack.
+
+### Ringkasan Fitur yang Diimplementasikan
+* [✅] Memastikan staff dapat masuk dan keluar dari sistem dengan aman.
+* [✅] Manajemen Staff: 
+  * Menampilkan daftar atau detail staff lain sesuai kebutuhan antarmuka.
+  * Memungkinkan staff untuk memperbarui data profil mereka sendiri.
+  * Menerapkan pembatasan akses agar staff tidak dapat mengubah data milik staff lain.
+* [✅] Fitur Presensi (Clock In & Clock Out): 
+  * Menyediakan antarmuka (UI) interaktif bagi staff untuk melakukan pencatatan kehadiran (*Clock In* dan *Clock Out*) yang terhubung langsung ke REST API backend.
+
+### Panduan Menjalankan Aplikasi Frontend
+
+1. **Instalasi Dependensi**
+   ```bash
+   pnpm install
+
+2. **Environment Configuration**
+   Buat file .env dan copy isinya dari .env.examples
+
+3. **Menjalankan Mode Pengembangan**
+   ```bash
+   pnpm dev
